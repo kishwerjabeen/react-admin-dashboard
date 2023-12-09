@@ -1,18 +1,34 @@
 
 // import './App.css';
 import Home from './pages/home/Home';
+import Login from './pages/login/Login';
+
+
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+  // Link,
+} from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        {/* <img src={logo} className="App-logo" alt="logo" /> */}
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" >
+          <Route index element={<Home/>}/>
+          <Route path='login' element={<Login/>}/>
+
+          </Route>
+
+        </Routes>
+      </BrowserRouter>
+
+      {/* <img src={logo} className="App-logo" alt="logo" /> */}
 
 
-        <Home />
-        Learn React
 
-      </header>
     </div>
   );
 }
