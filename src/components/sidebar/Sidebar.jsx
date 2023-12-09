@@ -20,11 +20,12 @@ const Sidebar = () => {
       <hr />
       <div className='center'>
         <ul>
+          <p className='title'>MAIN</p>
           <li>
             <DashboardIcon className="icon" />
             <span>Dashboard</span>
           </li>
-
+          <p className='title'>LISTS</p>
           <li>
             <PersonOutlineIcon className="icon" />
             <span>Users</span>
@@ -45,7 +46,7 @@ const Sidebar = () => {
             <span>Delivery</span>
           </li>
 
-
+          <p className='title'>USEFUL</p>
           <li>
             <InsertChartIcon className="icon" />
             <span>Stats</span>
@@ -57,7 +58,7 @@ const Sidebar = () => {
             <span>Notifications</span>
           </li>
 
-
+          <p className='title'>SERVICES</p>
           <li>
             <SettingsSystemDaydreamOutlinedIcon className="icon" />
             <span>System Health</span>
@@ -74,6 +75,7 @@ const Sidebar = () => {
             <span>Settings</span>
           </li>
 
+          <p className='title'>USER</p>
 
           <li>
             <AccountCircleOutlinedIcon className="icon" />
